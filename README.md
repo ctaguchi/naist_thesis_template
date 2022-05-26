@@ -1,0 +1,1 @@
+# naist_thesis_template
