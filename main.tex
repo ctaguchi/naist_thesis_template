@@ -1,0 +1,79 @@
+% pdfLaTeX
+% This template was made based on the template Word file distributed by NAIST, 
+% and made to be visually as similar as possible to the original template.
+% For this reason the space lengths and layouts are set manually by directly indicating them.
+% The font in the original Word file is Times New Roman,
+% whereas the PDF output seems to be written in Computer Modern.
+% This file uses LaTeX's default Computer Modern,
+% but users may probably specify another font,
+% since there is no specification by the format.
+
+\documentclass[a4paper, total={14.5cm, 20.5cm}, 12pt]{article}
+
+\usepackage{naist}
+
+%%%%% TITLE PAGES SETTING %%%%%
+\title{Theoretical Studies on Low-Speed Calculation Algorithms of $\pi$ Utilizing the Sun and the Moon} % Write your title
+\author{Hanako Sentan} % Write your full name
+\date{\today} % Change this to the appropriate submission date
+\thesistype{Master's Thesis} % or Doctoral Dissertation
+\program{Information Science and Engineering}
+% or also:
+% Biological Science,
+% Materials Science and Engineering, 
+% Data Science,
+% Bionanotechnology,
+% Intelligent Cyber-Physical Systems,
+% Computational Biology
+\supervisor{XXX} % Write your supervisor's name here.
+% Change naist.sty if you want to change the title (Prof. by default)
+\laboratory{xxx} % Write your lab's name here
+\division{Information Science} % or Biological Science, Materials Science
+\degree{Master of Engineering} % or Science, Biological Science
+\keywords{$\pi$, astronomy, mathematics, computer, algorithm} % Write your thesis's keywords
+%%%%% END OF THE TITLE PAGES SETTING %%%%%
+
+\begin{document}
+
+\maketitle
+\makefrontpage
+\pagenumbering{roman}
+\makeabstractpage
+\input{abstract}
+\makekeywords
+\clearpage
+
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+
+% Contents
+\pagenumbering{arabic}
+\input{ch1}
+\input{ch2}
+\input{ch3}
+
+\input{acknowledgement}
+
+\clearpage
+\bibliographystyle{ieeetr}
+% Citation style is not specified in the format given by NAIST.
+% Change the bibliography style following your specialization's conventions.
+% See also: https://www.overleaf.com/learn/latex/Bibtex_bibliography_styles
+% For NLP, you may want to use ACL's format; in that case,
+% download acl.bst and add it to the project directory,
+% and specify the bst file name in \bibliographystyle{}.
+
+\bibliography{reference}
+\clearpage
+
+\appendix
+\section*{Appendices}
+\addcontentsline{toc}{section}{Appendices}%
+
+\renewcommand*{\thesubsection}{\Alph{subsection}}
+\input{ap1}
+\input{ap2}
+
+\end{document}
