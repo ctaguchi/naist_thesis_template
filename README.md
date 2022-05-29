@@ -7,5 +7,5 @@ The layout, packages,  etc. are defined in `naist.sty`.
 Imported packages and new commands are limited to minimum, so that you can add packages by yourself without conflicts.
 
 ## Updates
-29 May 2022: Added a comment in main.tex to guide to naist.sty for editing thesis/dissertation committee members' info.
+29 May 2022: Added a comment in main.tex to guide to naist.sty for editing thesis/dissertation committee members' info. <br>
 26 May 2022: First release
